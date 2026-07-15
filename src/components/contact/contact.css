@@ -1,0 +1,130 @@
+.contact {
+  height: 100%;
+  display: flex;
+  gap: 100px;
+}
+.cvButton {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 12px 24px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid #dd4c62;
+  border-radius: 10px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cvButton:hover {
+  background-color: #dd4c62;
+  color: white;
+}
+
+.cSection {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cSection:last-child {
+  background-color: rgba(2, 2, 45, 0.187);
+  margin: 50px 0px;
+  padding: 50px;
+  border-radius: 50% 0px;
+}
+
+form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgba(2, 2, 45, 0.066);
+  padding: 50px;
+  border-radius: 50px;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+}
+
+.formItem {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-size: 13px;
+}
+
+.formButton {
+  background-color: #dd4c62;
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 1280px) {
+  .form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+  }
+
+  .cSection {
+    width: 100%;
+  }
+
+  .cSection:first-child {
+    height: 70%;
+  }
+  .cSection:last-child {
+    height: 30%;
+  }
+}
+.toast {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.toast-success {
+  background-color: rgba(34, 197, 94, 0.12);
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  color: #4ade80;
+}
+
+.toast-error {
+  background-color: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #f87171;
+}
+
+.toast svg {
+  flex-shrink: 0;
+}
